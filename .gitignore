@@ -3,8 +3,6 @@ coverage
 dist/*.gz
 dist/*.map
 docs
-test/e2e/report
-test/e2e/screenshots
 node_modules
 .DS_Store
 *~
