@@ -1,7 +1,7 @@
 {
-  "name": "rollup-lib",
+  "name": "cloud-utils",
   "description": "A collection of utils",
-  "version": "1.0.0",
+  "version": "1.1.6",
   "author": {
     "name": "liwb",
     "email": "lwbhtml@163.com"
@@ -13,6 +13,8 @@
     "dev:cjs": "rollup -w -c build/config.js --environment TARGET:commonjs",
     "build": "node build/build.js",
     "lint": "eslint --fix .js src",
+    "gen:docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
+    "docs:deploy": "bash ./deploy-docs.sh",
     "deploy": "sh build/release.sh"
   },
   "devDependencies": {
@@ -23,11 +25,13 @@
     "babel-preset-stage-2": "^6.22.0",
     "babel-polyfill": "6.22.0",
     "buble": "^0.16.0",
+    "docdash": "^0.4.0",
     "eslint": "^3.14.1",
     "eslint-config-standard": "^6.2.1",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^2.0.1",
+    "jsdoc": "^3.5.4",
     "rollup": "^0.51.0",
     "rollup-plugin-buble": "^0.16.0",
     "rollup-plugin-commonjs": "^8.0.2",
@@ -39,11 +43,13 @@
     "dist/*.js",
     "src"
   ],
-  "main": "dist/rollup-lib.min.js",
-  "module": "dist/rollup-lib.esm.js",
-  "browser": "dist/rollup-lib.js",
+  "main": "dist/cloud-utils.min.js",
+  "module": "dist/cloud-utils.esm.js",
+  "browser": "dist/cloud-utils.js",
   "keywords": [
     "rollup",
+    "cloud-utils",
+    "utils",
     "lib"
   ],
   "license": "MIT",
@@ -52,6 +58,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cklwblove/rollup-lib.git"
+    "url": "git+https://github.com/cloud-templates/cloud-utils.git"
   }
 }

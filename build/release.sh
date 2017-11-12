@@ -11,7 +11,7 @@ then
   echo "Releasing $VERSION ..."
 
   # build
-  VERSION=$VERSION npm run build
+  VERSION=$VERSION npm run build && npm run docs:deploy
 
   # commit
   git add -A

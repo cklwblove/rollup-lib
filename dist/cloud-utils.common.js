@@ -1,9 +1,13 @@
 /*!
- * rollup-lib v1.0.0 
+ * cloud-utils v1.1.7 
  * (c) 2017 liwb
  * A collection of utils
  * Released under the MIT License.
  */
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
 /**
  * 加法函数，用来得到精确的加法结果<br>
  * javascript的加法结果会有误差，在两个浮点数相加的时候会比较明显。这个函数返回较为精确的加法结果。
@@ -1344,4 +1348,52 @@ function toCamelCaseVar (variable) {
   return variable.replace(/_+[a-zA-Z]/g, function (str, index) { return index ? str.substr(-1).toUpperCase() : str; });
 }
 
-export { accAdd, accDiv, accMul, accSub, addChineseUnit, appendStockSuffix, encrypt, extend, formatBankCard, formatDate, formatTimeAgo, formatDateToTimeStamp, formatMoney, formatPhone, formatCopyfilesPath, getLocationHrefParam, getLocationSearchParam, getUrlNames, generateGUID, getRandomInt, htmlDecode, htmlEncode, inAlipay, inWeixin, isCardId, isDigit, isEmptyObject, isLeapYear, isLetters, isLicenseNo, isMobile, isValidDate, isValidEmail, isValidPassword, isValidQQ, isValidURI, isValidZipcode, preZeroFill, bytesToSize, dataURLToBlob, getPixelRatio, insertAtCaret, getDevice, getBrowser, getDiffDay, addClass, hasClass, removeClass, toCamelCaseVar };
+exports.accAdd = accAdd;
+exports.accDiv = accDiv;
+exports.accMul = accMul;
+exports.accSub = accSub;
+exports.addChineseUnit = addChineseUnit;
+exports.appendStockSuffix = appendStockSuffix;
+exports.encrypt = encrypt;
+exports.extend = extend;
+exports.formatBankCard = formatBankCard;
+exports.formatDate = formatDate;
+exports.formatTimeAgo = formatTimeAgo;
+exports.formatDateToTimeStamp = formatDateToTimeStamp;
+exports.formatMoney = formatMoney;
+exports.formatPhone = formatPhone;
+exports.formatCopyfilesPath = formatCopyfilesPath;
+exports.getLocationHrefParam = getLocationHrefParam;
+exports.getLocationSearchParam = getLocationSearchParam;
+exports.getUrlNames = getUrlNames;
+exports.generateGUID = generateGUID;
+exports.getRandomInt = getRandomInt;
+exports.htmlDecode = htmlDecode;
+exports.htmlEncode = htmlEncode;
+exports.inAlipay = inAlipay;
+exports.inWeixin = inWeixin;
+exports.isCardId = isCardId;
+exports.isDigit = isDigit;
+exports.isEmptyObject = isEmptyObject;
+exports.isLeapYear = isLeapYear;
+exports.isLetters = isLetters;
+exports.isLicenseNo = isLicenseNo;
+exports.isMobile = isMobile;
+exports.isValidDate = isValidDate;
+exports.isValidEmail = isValidEmail;
+exports.isValidPassword = isValidPassword;
+exports.isValidQQ = isValidQQ;
+exports.isValidURI = isValidURI;
+exports.isValidZipcode = isValidZipcode;
+exports.preZeroFill = preZeroFill;
+exports.bytesToSize = bytesToSize;
+exports.dataURLToBlob = dataURLToBlob;
+exports.getPixelRatio = getPixelRatio;
+exports.insertAtCaret = insertAtCaret;
+exports.getDevice = getDevice;
+exports.getBrowser = getBrowser;
+exports.getDiffDay = getDiffDay;
+exports.addClass = addClass;
+exports.hasClass = hasClass;
+exports.removeClass = removeClass;
+exports.toCamelCaseVar = toCamelCaseVar;

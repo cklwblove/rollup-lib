@@ -1,5 +1,5 @@
 /*!
- * rollup-lib v1.0.0 
+ * cloud-utils v1.1.7 
  * (c) 2017 liwb
  * A collection of utils
  * Released under the MIT License.
