@@ -14,7 +14,7 @@
     "build": "node build/build.js",
     "lint": "eslint --fix .js src",
     "gen:docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
-    "docs:deploy": "bash ./deploy-docs.sh",
+    "docs:deploy": "sh ./deploy-docs.sh",
     "deploy": "sh build/release.sh"
   },
   "devDependencies": {
