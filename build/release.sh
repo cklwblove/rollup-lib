@@ -11,7 +11,7 @@ then
   echo "Releasing $VERSION ..."
 
   # build
-  VERSION=$VERSION npm run build && npm run docs:deploy
+  VERSION=$VERSION npm run build
 
   # commit
   git add -A
@@ -22,6 +22,12 @@ then
   npm version $VERSION --message "[release] $VERSION"
 
   # publish
+  git push origin refs/tags/v$VERSION
   git push
-  npm publish
+
+  if [[ -z $RELEASE_TAG ]]; then
+    npm publish
+  else
+    npm publish --tag $RELEASE_TAG
+  fi
 fi
