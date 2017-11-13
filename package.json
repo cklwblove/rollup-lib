@@ -12,7 +12,7 @@
     "dev:prod": "rollup -w -c build/config.js --environment TARGET:production",
     "dev:cjs": "rollup -w -c build/config.js --environment TARGET:commonjs",
     "build": "node build/build.js",
-    "lint": "eslint --fix .js src",
+    "lint": "eslint --fix --ext .js src",
     "deploy": "sh build/release.sh"
   },
   "devDependencies": {
